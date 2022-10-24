@@ -16,11 +16,21 @@ span.profile-box {
   margin-right: 10px;
 }
 
+.svg {
+  transform: translateY(4px);
+  margin-right: 5px;
+}
+
 .heading {
   font-size: 35px;
   line-height: 50px;
-  margin-top: -5px;
+  margin-top: -12px;
   -webkit-text-stroke: 1px;
+}
+
+.heading span {
+  font-family: "JSMedium";
+  font-size: 23px;
 }
 
 div.header-break {
@@ -28,17 +38,22 @@ div.header-break {
 }
 
 .jumbo {
-  margin: 23vh 0;
+  margin: 25vh 0;
 }
 
 .card {
   width: calc(50% - 10px);
   height: 480px;
+  transition: var(--init-transition);
   overflow: hidden;
   background: var(--bs-black);
   position: relative;
-  /* box-shadow: var(--init-shadow); */
   border-radius: 30px;
+}
+
+.card:hover {
+  animation: hover 600ms ease-in-out;
+  box-shadow: 0 0 0 .2rem white;
 }
 
 .card img {
@@ -55,8 +70,8 @@ div.card-row {
 
 .caption {
   width: calc(100% - 40px);
-  background: linear-gradient(to right, #00000033, #00000023);
-  backdrop-filter: blur(20px);
+  background: var(--bs-black);
+  /* backdrop-filter: blur(20px); */
   border-radius: 30px;
   height: 90px;
   left: 0;
@@ -81,4 +96,34 @@ div.card-row {
 .card .title {
   left: 20px;
   top: 20px;
+}
+
+section.banner {
+  height: 600px;
+  background: #222;
+  border-radius: 50px;
+}
+
+.service {
+  margin-bottom: 100px;
+}
+
+.service:last-child {
+  margin-bottom: 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 13px;
+  color: var(--bs-smoke);
+  justify-content: center;
+  background: #222222a0;
+  font-size: 14px;
+  border-radius: 14px;
+  margin-right: 20px;
+}
+
+.chip:last-child {
+  margin-right: 0px;
 }
