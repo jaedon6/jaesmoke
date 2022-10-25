@@ -30,7 +30,6 @@ export default function Contact() {
         </div>
         <div>
           <div className="row">
-<<<<<<< HEAD
             <div className="large-2 medium-12"></div>
             <div className="large-8 medium-12 left-text-small">
               <div className="contact-card flex justify-content-between w-100">
@@ -94,20 +93,6 @@ export default function Contact() {
               </div>
             </div>
             <div className="large-2 medium-12 flex justify-content-end"></div>
-=======
-            <div className="large-2 medium-12">
-              <p>Cotnact Info</p>
-            </div>
-            <div className="large-8 medium-12 left-text-small">
-              <div className="contact-card">
-                <FiMail />
-                jaysmoke.inbox@gmail.com
-              </div>
-            </div>
-            <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">handles</p>
-            </div>
->>>>>>> 8584480b4444e451b70aed293f0440a3e264c6a9
           </div>
         </div>
       </div>
