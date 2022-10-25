@@ -1,0 +1,8 @@
+@keyframes hover {
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: skewY(-2deg);
+  }
+}
