@@ -1,78 +1,34 @@
-import { Link } from "react-router-dom";
-import { FiCompass } from "react-icons/fi";
+import { FiMaximize2 } from "react-icons/fi";
 
+import { useData } from "../../context";
 
 export default function WorksWidget(props) {
+  const { works } = useData();
+
   return (
+    works.length >= 1 &&
     <div className="card-row">
-      <div className="card pointer">
-        <div className="title absolute small-text">Oshify</div>
-        <img src="/images/w01.png" alt="work" />
+    { works.map(
+      work =>
+      <div className="card pointer" key={work.id}>
+        <img src={work.data().image} alt={work.data().name} />
         <div className="caption">
           <div className="content flex align-items-center justify-content-between">
             <div>
-              <p className="small-text smoke-text">2018</p>
-              <p>Site Developement</p>
+              <p className="small-text smoke-text">
+                {work.data().year.toString()} {
+                  work.data().collaborated ? "(DUO)" : null
+                } - {work.data().name}
+              </p>
+              <p>{work.data().category}</p>
             </div>
-            <Link to="#" className="flex align-items-center justify-content-between">
-              <FiCompass />
-              &nbsp;
-              Open
-            </Link>
+            <a href={work.data().url} target="_blank" rel="noreferrer" className="flex align-items-center justify-content-between">
+              <FiMaximize2 />
+            </a>
           </div>
         </div>
       </div>
-      <div className="card pointer">
-        <div className="title absolute small-text">Oshify</div>
-        <img src="/images/w01.png" alt="work" />
-        <div className="caption">
-          <div className="content flex align-items-center justify-content-between">
-            <div>
-              <p className="small-text smoke-text">2018</p>
-              <p>Site Developement</p>
-            </div>
-            <Link to="#" className="flex align-items-center justify-content-between">
-              <FiCompass />
-              &nbsp;
-              Open
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="card pointer">
-        <div className="title absolute small-text">Oshify</div>
-        <img src="/images/w01.png" alt="work" />
-        <div className="caption">
-          <div className="content flex align-items-center justify-content-between">
-            <div>
-              <p className="small-text smoke-text">2018</p>
-              <p>Site Developement</p>
-            </div>
-            <Link to="#" className="flex align-items-center justify-content-between">
-              <FiCompass />
-              &nbsp;
-              Open
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="card pointer">
-        <div className="title absolute small-text">Oshify</div>
-        <img src="/images/w01.png" alt="work" />
-        <div className="caption">
-          <div className="content flex align-items-center justify-content-between">
-            <div>
-              <p className="small-text smoke-text">2018</p>
-              <p>Site Developement</p>
-            </div>
-            <Link to="#" className="flex align-items-center justify-content-between">
-              <FiCompass />
-              &nbsp;
-              Open
-            </Link>
-          </div>
-        </div>
-      </div>
+    ) }
     </div>
   )
 }

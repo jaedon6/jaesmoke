@@ -10,13 +10,13 @@ export default function Home() {
       <div className="header-break"></div>
       <div className="container">
         <section className="jumbo">
-          <div className="row">
+          <div className="row reverse-responsive">
             <div className="large-2 medium-12">
-              <p>I'm Jay Smoke</p>
+              <p className="mb-small">I'm Jay Smoke</p>
             </div>
             <div className="large-8 medium-12 left-text-small">
               <div className="heading">
-                A Multidisciplinary Software Designer and Developer with over five(5) years of experience
+                A Multidisciplinary Software Designer and Developer with over 5 years of experience
               </div>
               <br />
               <p className="smoke-text">
@@ -29,11 +29,12 @@ export default function Home() {
           </div>
         </section>
         <section className="jumbo">
-          <div className="row">
-            <div className="large-2">
-              <p>Selected Works</p>
+          <div className="row reverse-responsive">
+            <div className="large-2 medium-12 flex justify-content-between">
+              <p className="mb-small">Selected Works</p>
+              <p className="mb-small smoke-text hide-on-large">2018 -&nbsp;<span className="white-text">Current</span></p>
             </div>
-            <div className="large-8">
+            <div className="large-8 medium-12">
               <WorksWidget />
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
@@ -42,11 +43,11 @@ export default function Home() {
           </div>
         </section>
         <section className="jumbo">
-          <div className="row">
-            <div className="large-2">
-              <p>Skillset</p>
+          <div className="row reverse-responsive">
+            <div className="large-2 medium-12 flex justify-content-between">
+              <p className="mb-small">Skillset</p>
             </div>
-            <div className="large-8">
+            <div className="large-8 medium-12">
               <ServicesWidget />
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
@@ -60,11 +61,11 @@ export default function Home() {
         <section className="banner">
         </section>
         <section className="jumbo">
-          <div className="row">
-            <div className="large-2">
-              <p>So...</p>
+          <div className="row reverse-responsive">
+            <div className="large-2 medium-12">
+              <p className="mb-small">So...</p>
             </div>
-            <div className="large-8">
+            <div className="large-8 medium-12">
               <p>
                 Having over five(5) years of experience, I have grown a diverse set of skills not limited to software and design.
               </p>

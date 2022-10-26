@@ -10,17 +10,17 @@ export default function Contact() {
       <div className="header-break"></div>
       <div className="container">
         <div className="jumbo">
-          <div className="row">
+          <div className="row reverse-responsive">
             <div className="large-2 medium-12">
-              <p>Get in Touch</p>
+              <p className="mb-small">Get in Touch</p>
             </div>
             <div className="large-8 medium-12 left-text-small">
               <div className="heading">
-                Let's turn ideas into Finished Products
+                Connect with me
               </div>
               <br />
               <p className="smoke-text">
-                ccumulating over five(5) years of experience designing and developing software, I have developed a deep and strong understanding
+                Have any questions? Get in touch with me using any of the mediums below to get a quote, discuss opportunities or just say Hello 👋
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">

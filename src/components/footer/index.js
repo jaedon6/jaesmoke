@@ -6,11 +6,11 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="large-8">
-            <p>Thanks for reading 🤝</p>
+          <div className="large-8 medium-12">
+            <p className="mb-small">Thanks for visiting 🤝</p>
           </div>
 
-          <div className="large-4 flex align-tems-center justify-content-between">
+          <div className="large-4 medium-12 flex justify-content-between">
             <Link to="#" onClick={() => window.scrollTo(0,0)}>Scroll to top</Link>
             <p className="smoke-text">&copy; 2022. JSmoke Studios</p>
           </div>
