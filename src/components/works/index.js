@@ -3,10 +3,10 @@ import { FiMaximize2 } from "react-icons/fi";
 import { useData } from "../../context";
 
 export default function WorksWidget(props) {
-  const { works, isPending } = useData();
+  const { works } = useData();
 
   return (
-    !isPending && works.length >= 1 &&
+    works.length >= 1 &&
     <div className="card-row">
     { works.map(
       work =>
