@@ -1,5 +1,10 @@
 @import "./assets/fonts/font.css";
 
+::selection {
+  background: white;
+  color: black;
+}
+
 ::-webkit-scrollbar {
   width: 2px;
   height: 0;
@@ -18,10 +23,11 @@
 }
 
 * {
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
+  outline: none;
   padding: 0;
   scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
 }
 
 body {

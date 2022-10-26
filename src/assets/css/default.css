@@ -6,14 +6,26 @@ body {
 span.profile-box {
   position: relative;
   color: var(--bs-smoke);
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   background: var(--bs-black);
   border-radius: 100px;
   background-image: url("../../../public/images/profile.png");
   background-position: center;
   background-size: cover;
   margin-right: 10px;
+}
+
+span.profile-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -100px;
+  width: 1px;
+  height: 100px;
+  background: #222;
 }
 
 .svg {
@@ -25,7 +37,8 @@ span.profile-box {
   font-size: 35px;
   line-height: 50px;
   margin-top: -12px;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 0.04rem;
+  letter-spacing: -0.8px;
 }
 
 .heading span {
@@ -52,7 +65,7 @@ div.header-break {
 }
 
 .card:hover {
-  /* animation: hover 600ms ease-in-out; */
+  animation: hover 600ms ease-in-out;
   box-shadow: 0 0 0 .2rem var(--bs-white);
 }
 

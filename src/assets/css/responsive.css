@@ -25,7 +25,6 @@
     font-size: 32px;
     line-height: 43px;
     margin-top: -12px;
-    -webkit-text-stroke: 1px;
   }
 
   .reverse-responsive>div:last-child {
@@ -83,6 +82,6 @@
   }
 
   footer {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }
