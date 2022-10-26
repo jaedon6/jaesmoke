@@ -25,7 +25,22 @@ span.profile-box::before {
   top: -100px;
   width: 1px;
   height: 100px;
+  z-index: -2;
   background: #222;
+}
+
+span.profile-box::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  animation: rolls 2s linear infinite;
+  margin: auto;
 }
 
 .svg {
@@ -137,6 +152,7 @@ section.banner {
 .service {
   border-bottom: 1px solid #22222273;
   margin-bottom: 160px;
+  padding-bottom: 10px;
 }
 
 .service:last-child {
@@ -146,11 +162,12 @@ section.banner {
 .chips {
   display: flex;
   overflow: auto;
+  position: relative;
   white-space: nowrap;
 }
 
 .chip {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 6px 13px;
   color: var(--bs-smoke);
@@ -199,7 +216,7 @@ section.banner {
 div[data-role="load"] {
   width: 100%;
   height: 100vh;
-  background: black;
+  background: var(--bs-black);
   top: 0;
   position: fixed;
   z-index: 1;

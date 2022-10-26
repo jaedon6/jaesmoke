@@ -12,3 +12,9 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes rolls {
+  0% {
+    transform: translateY(-100px);
+  }
+}
