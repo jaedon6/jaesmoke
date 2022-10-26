@@ -1,0 +1,117 @@
+header {
+  height: var(--init-height);
+  z-index: 2;
+}
+
+footer {
+  padding-bottom: 50px;
+}
+
+header nav {
+  width: var(--container-size);
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  color: var(--bs-smoke);
+  transition: var(--init-transition);
+}
+
+header nav ul li a:hover {
+  color: var(--bs-white);
+}
+
+header nav ul li a.active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-100v {
+  height: 100vh;
+}
+
+.no-list-marker {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: var(--container-size);
+  margin: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.smoke-text {
+  color: var(--bs-smoke);
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.white-text {
+  color: var(--bs-white);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
