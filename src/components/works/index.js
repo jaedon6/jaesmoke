@@ -12,7 +12,7 @@ export default function WorksWidget(props) {
     works.length >= 1 ?
     (
       <div className="card-row">
-        { works.map(work => <Work work={work} />) }
+        { works.map(work => <Work key={work.id} work={work.data()} />) }
       </div>
     ) : (
       <div className="flex align-items-center justify-content-center" data-role="box">

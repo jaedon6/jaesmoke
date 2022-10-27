@@ -26,7 +26,7 @@ export default function Home() {
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">@aboutme</p>
+              <p className="smoke-text">blacc&reg;</p>
             </div>
           </div>
         </section>

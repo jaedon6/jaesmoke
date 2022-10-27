@@ -51,11 +51,12 @@ span.profile-box::after {
 }
 
 .heading {
-  font-size: 35px;
-  line-height: 50px;
-  margin-top: -12px;
-  -webkit-text-stroke: 0.04rem;
-  letter-spacing: -0.8px;
+  font-size: 45px;
+  line-height: 51px;
+  margin-top: -8px;
+  /* -webkit-text-stroke: 0.04rem; */
+  font-family: "JSMedium";
+  letter-spacing: -0.9px;
 }
 
 .heading span {
