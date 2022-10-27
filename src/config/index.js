@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 
 
 export const app = initializeApp({
@@ -13,3 +14,4 @@ export const app = initializeApp({
 });
 
 export const db = getFirestore(app);
+export const an = getAnalytics(app);

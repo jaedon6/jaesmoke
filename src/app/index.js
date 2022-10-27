@@ -1,4 +1,4 @@
-import { Fragment, lazy } from "react";
+import { Fragment, Suspense, lazy } from "react";
 
 import { DataProvider } from "../context";
 
@@ -9,7 +9,9 @@ export default function App() {
   return (
     <Fragment>
       <DataProvider>
-        <Routes />
+        <Suspense fallback={<div data-role="load"></div>}>
+          <Routes />
+        </Suspense>
       </DataProvider>
     </Fragment>
   )
