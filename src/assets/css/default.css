@@ -9,13 +9,12 @@ span.profile-box {
   color: var(--bs-smoke);
   width: 30px;
   height: 30px;
-  background: var(--bs-black);
   border-radius: 100px;
+  margin-right: 10px;
+  background: var(--bs-black);
   background-image: url("../../../public/images/profile.png");
   background-position: center;
   background-size: cover;
-  animation-delay: 2s;
-  margin-right: 10px;
 }
 
 span.profile-box::before {
@@ -259,10 +258,13 @@ section.banner .banner-content {
 .contact-card .icon {
   width: 58px;
   height: 58px;
-  box-shadow: var(--init-shadow);
+  border-radius: 22px;
   border: 1px solid #111;
   background: var(--bs-black);
-  border-radius: 22px;
+  box-shadow: var(--init-shadow);
+  -webkit-appearance: none;
+  -webkit-box-shadow: var(--init-shadow);
+  -moz-box-shadow: var(--init-shadow);
 }
 
 .contact-card .label {

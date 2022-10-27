@@ -8,8 +8,8 @@ export default function Work({ work }) {
         <div className="content flex align-items-center justify-content-between">
           <div>
             <p className="small-text smoke-text">
-              {work.year.toString()}
-              {work.collaborated && "(DUO)"} - {work.name}
+              {work.year.toString()} - {work.name}
+              {work.collaborated && "(Collab)"} 
             </p>
             <p>
               {work.category}
