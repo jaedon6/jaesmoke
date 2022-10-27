@@ -1,5 +1,6 @@
 import { lazy } from "react";
-import { FiLayers } from "react-icons/fi";
+import { RiUserSmileFill } from "react-icons/ri";
+import { HiOutlineRectangleStack } from "react-icons/hi2";
 
 const WorksWidget = lazy(() => import("../../components/works"));
 const ServicesWidget = lazy(() => import("../../components/services"));
@@ -54,8 +55,8 @@ export default function Home() {
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
               <p className="smoke-text flex justify-content-between">
-                <FiLayers className="svg" />
-                <span className="white-text">TechStack</span>
+                <HiOutlineRectangleStack className="svg" />
+                <span className="white-text">Techstack</span>
               </p>
             </div>
           </div>
@@ -72,12 +73,13 @@ export default function Home() {
               </p>
               <br />
               <p className="smoke-text">
-                I am an avid lover of Clean Code and Architecture, proposed by Robert C. Martin, and Test-Driven Development, and I often use them in projects I work on. My skills as a Software Developer are limited to frameworks or libraries; I see them as necessary tools to get the job done. Hence I am a swift learner when I have to use tools I am not familiar with.
+                I am an avid lover of Clean Code and Architecture, proposed by Robert C. Martin, and Test-Driven Development, and I often use them in projects I work on. My skills as a Software Developer are not limited to frameworks or libraries; I see them as necessary tools to get the job done. Hence I am a swift learner when I have to use tools I am not familiar with.
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">
-                @jaysmoke
+              <p className="smoke-text flex justify-content-between">
+                <RiUserSmileFill className="svg" />
+                <span className="white-text">jsmoke</span>
               </p>
             </div>
           </div>

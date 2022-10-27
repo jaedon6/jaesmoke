@@ -6,7 +6,7 @@
   --container-size: 92.666%;
   --init-height: 150px;
   --init-transition: 200ms ease;
-  --init-shadow: 0 0px 15px 0 rgba(0,0,0,.5), 0 0 5px 0 rgba(20,20,20,1), inset 0 5px 20px 0 rgba(0,0,0,.1);
+  --init-shadow: 0 10px 15px 0 rgba(0,0,0,.5), 0 0 5px 0 rgba(20,20,20,1), inset 0 5px 20px 0 rgba(0,0,0,.1);
 }
 
 @import "./css/animation.css";

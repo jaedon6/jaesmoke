@@ -1,7 +1,5 @@
 @keyframes hover {
-  25% { transform: translateY(10px); }
-
-  50% { transform: skewY(-2deg); }
+  50% { transform: translateY(10px) rotate(90deg) scaleY(-1); }
 }
 
 @keyframes spin {

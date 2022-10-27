@@ -19,6 +19,7 @@ export default function Work({ work }) {
             href={work.url}
             target="_blank"
             rel="noreferrer"
+            data-role="action"
             className="flex align-items-center justify-content-between">
             <FiMaximize2 />
           </a>

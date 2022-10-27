@@ -119,15 +119,22 @@ div.card-row {
   padding: 20px;
 }
 
-.caption a {
+a[data-role="action"] {
   width: 46px;
   background: white;
   display: flex;
+  z-index: 1;
   align-items: center;
   justify-content: center;
+  transition: var(--init-transition);
   color: var(--bs-black);
   height: 46px;
   border-radius: 25px;
+}
+
+a[data-role="action"]:hover,
+a[data-role="action"]:focus {
+  transform: rotate(45deg);
 }
 
 .card .title {
@@ -140,13 +147,65 @@ div.card-row {
 }
 
 section.banner {
-  height: 600px;
-  overflow: auto;
-  margin: auto;
+  padding: 150px 0;
+  overflow: hidden;
   position: relative;
   background: var(--bs-black);
-  box-shadow: var(--init-shadow);
+  border: 1px solid #111;
   border-radius: 50px;
+  z-index: 1;
+  margin: 300px 0;
+}
+
+.banner-card-stack {
+  width: 80%;
+  background: #0B0B0B;
+  border: 1px solid #111;
+  margin: auto;
+  height: 100px;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-385px);
+}
+
+.banner-card-stack:first-child {
+  transform: translateY(-370px);
+  width: 70%;
+  background: #0A0A0A;
+}
+
+section.banner .banner-content {
+  width: 81%;
+  z-index: 1;
+  margin: auto;
+}
+
+.banner-link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.banner-link img {
+  position: absolute;
+  inset: 0;
+  width: 280px;
+  margin: auto;
+}
+
+.banner-text {
+  font-size: 75px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  font-family: "JSMedium";
+}
+
+.shine {
+  background: linear-gradient(to right, #444, #888, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .service {

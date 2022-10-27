@@ -46,8 +46,17 @@
   }
 
   section.banner {
-    height: 300px;
     border-radius: 30px;
+    padding: 20px 0;
+  }
+
+  .banner-content {
+    width: calc(100% - 40px) !important;
+  }
+
+  .banner-text {
+    font-size: 65px;
+    line-height: 75px;
   }
 
   .medium-12 { width: calc((12/12) * 100%);}
@@ -82,7 +91,11 @@
   }
 
   footer {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .banner-link img {
+    opacity: .02;
   }
 
   .small-12 { width: calc((12/12) * 100%);}
