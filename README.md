@@ -14,5 +14,5 @@ Having over 5+ years of experience in Software and Design
 * Graphic Design
 * Scripting & Pentesting
 <br>
-<!-- [![Jay's github activity graph](https://activity-graph.herokuapp.com/graph?username=jaesmoke&theme=xcode)]() -->
+[[Jay's github activity graph](https://activity-graph.herokuapp.com/graph?username=jaesmoke&theme=xcode)]()
 As a Software Developer with an eye for design and user experience, I craft quality software from front to back - every aspect considered. I strive to build products and connections driven by empathy, people, and technology.
