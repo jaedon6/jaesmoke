@@ -19,7 +19,7 @@ export default function BannerWidget() {
               </div>
               <br />
               <p className="mb-small smoke-text">
-                As a Software Developer with an eye for design and user experience, I craft quality software front to back - every aspect considered. I strive to build products and connections driven by empathy, people, and technology.
+                As a Software Developer with an eye for design and user experience, I craft quality software from front to back - every aspect considered. I strive to build products and connections driven by empathy, people, and technology.
               </p>
             </div>
             <div className="large-4 medium-12 relative banner-link">

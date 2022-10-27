@@ -1,6 +1,6 @@
-import { lazy } from "react";
+import { lazy, Fragment } from "react";
+import { IoWalletOutline } from "react-icons/io5";
 import { RiUserSmileFill } from "react-icons/ri";
-import { HiOutlineRectangleStack } from "react-icons/hi2";
 
 const WorksWidget = lazy(() => import("../../components/works"));
 const ServicesWidget = lazy(() => import("../../components/services"));
@@ -9,7 +9,7 @@ const BannerWidget = lazy(() => import("../../components/banner"));
 
 export default function Home() {
   return (
-    <>
+    <Fragment>
       <div className="header-break"></div>
       <div className="container">
         <section className="jumbo">
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
               <p className="smoke-text flex justify-content-between">
-                <HiOutlineRectangleStack className="svg" />
+                <IoWalletOutline className="svg" />
                 <span className="white-text">Techstack</span>
               </p>
             </div>
@@ -85,6 +85,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-    </>
+    </Fragment>
   )
 }

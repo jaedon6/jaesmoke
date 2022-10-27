@@ -255,6 +255,10 @@ section.banner .banner-content {
   flex-direction: row-reverse;
 }
 
+.contact-card>a {
+  transform: translateY(10px);
+}
+
 .contact-card .icon {
   width: 58px;
   height: 58px;
