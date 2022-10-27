@@ -1,8 +1,10 @@
-import React, { lazy } from "react";
+import { lazy } from "react";
 import { FiLayers } from "react-icons/fi";
 
 const WorksWidget = lazy(() => import("../../components/works"));
 const ServicesWidget = lazy(() => import("../../components/services"));
+const BannerWidget = lazy(() => import("../../components/banner"));
+
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
             </div>
             <div className="large-8 medium-12 left-text-small">
               <div className="heading">
-                A Multidisciplinary Software Designer and Developer with over 5 years of experience
+                A Creative Software Designer and Developer with over 5 years of experience
               </div>
               <br />
               <p className="smoke-text">
@@ -58,8 +60,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="banner">
-        </section>
+        <BannerWidget />
         <section className="jumbo">
           <div className="row reverse-responsive">
             <div className="large-2 medium-12">

@@ -1,10 +1,9 @@
-import React from "react";
 import { FiMail, FiPhone, FiLinkedin } from "react-icons/fi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 
 
-export default function Contact() {
+export default function Contact(props) {
   return (
     <>
       <div className="header-break"></div>

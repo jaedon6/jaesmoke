@@ -1,10 +1,16 @@
-import React, { useContext, useState, useEffect, useTransition } from "react";
+import {
+  useContext,
+  useState,
+  useEffect,
+  useTransition,
+  createContext,
+} from "react";
 import { collection, getDocs } from "firebase/firestore";
 
 import { db } from "../config";
 
 
-const DataContext = React.createContext();
+const DataContext = createContext();
 
 export const useData = () => useContext(DataContext);
 

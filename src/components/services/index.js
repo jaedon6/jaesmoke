@@ -21,17 +21,19 @@ export default function ServicesWidget() {
         <div className="heading">Full Stack Web Developement</div>
         <br />
         <p className="smoke-text">
-          Having the proficiency to create both client-side and server-side applications is second nature to me.
+          Having the proficiency to create both client-side and server-side web applications is second nature to me.
         </p>
         <br />
         <div className="chips">
           <div className="chip">Python</div>
           <div className="chip">Django</div>
           <div className="chip">Wordpress</div>
-          <div className="chip">&#183;HTML&nbsp;&#183;CSS&nbsp;&#183;Sass</div>
+          <div className="chip">HTML&nbsp;+&nbsp;CSS</div>
+          <div className="chip">Sass</div>
+          <div className="chip">SQL</div>
           <div className="chip">PHP</div>
           <div className="chip">React</div>
-          <div className="chip">Angular&nbsp;JS</div>
+          <div className="chip">Node</div>
           <div className="chip">Javascript</div>
         </div>
       </div>

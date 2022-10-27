@@ -1,7 +1,8 @@
-import React, { Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes as Rs, Route } from "react-router-dom";
 
 import * as urls from "./endpoints";
+import * as utils from "../utils";
 
 const Container = lazy(() => import("../app/container"));
 
@@ -15,8 +16,20 @@ export default function Routes() {
       <Container>
         <Suspense fallback={<div data-role="load"></div>}>
           <Rs>
-            <Route exact path={urls.index} element={<Home />} />
-            <Route exact path={urls.contact} element={<Contact />} />
+            <Route
+              exact
+              path={urls.index}
+              element={
+                <Home title={`${utils.appname} — Creative Developer`} />
+              }
+            />
+            <Route
+              exact
+              path={urls.contact}
+              element={
+                <Contact title={`${utils.appname} — Contact`} />
+              }
+            />
           </Rs>
         </Suspense>
       </Container>

@@ -1,4 +1,4 @@
-import React, { lazy, Fragment } from "react";
+import { lazy, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
 import * as urls from "../../routes/endpoints";

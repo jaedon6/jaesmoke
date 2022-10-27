@@ -1,4 +1,4 @@
-import React, { Fragment, lazy } from "react";
+import { Fragment, lazy } from "react";
 
 import { DataProvider } from "../context";
 

@@ -1,20 +1,13 @@
 @keyframes hover {
-  25% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: skewY(-2deg);
-  }
+  25% { transform: translateY(10px); }
+
+  50% { transform: skewY(-2deg); }
 }
 
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes rolls {
-  0% {
-    transform: translateY(-100px);
-  }
+  0% { transform: translateY(-100px); }
 }

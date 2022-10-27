@@ -1,6 +1,7 @@
 body {
   color: var(--bs-white);
-  background: radial-gradient(#0A0A0A, var(--bs-black), var(--bs-black-alt), #000);
+  background: linear-gradient(#0A0A0A, var(--bs-black), var(--bs-black-alt), #000);
+  background-color: var(--bs-black);
 }
 
 span.profile-box {
@@ -13,6 +14,7 @@ span.profile-box {
   background-image: url("../../../public/images/profile.png");
   background-position: center;
   background-size: cover;
+  animation-delay: 2s;
   margin-right: 10px;
 }
 
@@ -80,7 +82,7 @@ div.header-break {
 }
 
 .card:hover {
-  animation: hover 600ms ease-in-out;
+  /* animation: hover 600ms ease-in-out; */
   box-shadow: 0 0 0 .2rem var(--bs-white);
 }
 
@@ -140,13 +142,10 @@ section.banner {
   height: 600px;
   overflow: auto;
   margin: auto;
-  background: #222;
-  resize: both;
+  position: relative;
+  background: var(--bs-black);
+  box-shadow: var(--init-shadow);
   border-radius: 50px;
-  min-width: 70%;
-  max-width: 100%;
-  max-height: 600px;
-  min-height: 400px;
 }
 
 .service {
@@ -169,7 +168,7 @@ section.banner {
 .chip {
   display: inline-flex;
   align-items: center;
-  padding: 6px 13px;
+  padding: 7px 13.63px;
   color: var(--bs-smoke);
   position: relative;
   justify-content: center;
@@ -179,6 +178,12 @@ section.banner {
   font-size: 14px;
   border-radius: 18px;
   margin-right: 15px;
+}
+
+.chip[data-role="error"] {
+  background: #FF5F4320;
+  border: none;
+  color: #FF5F43;
 }
 
 .chip:last-child {
@@ -222,7 +227,16 @@ div[data-role="load"] {
   z-index: 1;
 }
 
-div[data-role="load"]::before {
+div[data-role="load-min"],
+div[data-role="box"] {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: var(-bs-black);
+}
+
+div[data-role="load"]::before,
+div[data-role="load-min"]::before {
   position: absolute;
   content: '';
   inset: 0;
