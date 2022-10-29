@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               <br />
               <p className="smoke-text">
-                With five(5) years of experience designing and developing software, I have developed a deep and solid understanding of software development principles such as SOLID, YAGNI, KISS, and the use of Architecture to manage and reduce system complexities.
+                With five(5) years of experience in designing and developing software, I have developed a deep and solid understanding of software development principles such as SOLID, YAGNI, KISS, and the use of Architecture to manage and reduce system complexities.
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
