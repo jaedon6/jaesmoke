@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className="large-8 medium-12 left-text-small">
               <div className="heading">
-                A Creative Software Designer and Developer with over 5 years of experience
+                Creative Software Designer and Developer with over 5 years of experience
               </div>
               <br />
               <p className="smoke-text">
