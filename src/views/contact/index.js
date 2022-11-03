@@ -23,7 +23,9 @@ export default function Contact(props) {
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">@contact</p>
+              <p className="smoke-text">
+                <span className="chip">contact</span>
+              </p>
             </div>
           </div>
         </div>

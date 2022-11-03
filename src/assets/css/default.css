@@ -9,39 +9,12 @@ span.profile-box {
   color: var(--bs-smoke);
   width: 30px;
   height: 30px;
-  border-radius: 100px;
+  border-radius: 200px;
   margin-right: 10px;
   background: var(--bs-black);
   background-image: url("../../../public/images/profile.png");
   background-position: center;
   background-size: cover;
-}
-
-span.profile-box::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -100px;
-  width: 1px;
-  height: 100px;
-  z-index: -2;
-  background: #222;
-}
-
-span.profile-box::after {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 10px;
-  background: white;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: -1;
-  animation: rolls 2s linear infinite;
-  margin: auto;
 }
 
 .svg {
@@ -54,12 +27,12 @@ span.profile-box::after {
   line-height: 51px;
   margin-top: -8px;
   /* -webkit-text-stroke: 0.04rem; */
-  font-family: "JSMedium";
+  font-family: "SFProDisplayBold","SFProIconsRegular","Helvetica Neue","Helvetica","Arial",sans-serif;
   letter-spacing: -0.9px;
 }
 
 .heading span {
-  font-family: "JSMedium";
+  font-family: "SFProDisplayBold","SFProIconsRegular","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-size: 23px;
 }
 
@@ -198,7 +171,7 @@ section.banner .banner-content {
   font-size: 75px;
   line-height: 80px;
   letter-spacing: -1px;
-  font-family: "JSMedium";
+  font-family: "SFProDisplayBold","SFProIconsRegular","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .shine {
@@ -231,12 +204,12 @@ section.banner .banner-content {
   color: var(--bs-smoke);
   position: relative;
   justify-content: center;
-  margin: 8px 0;
-  border: 1px solid #222;
-  background: #22222270;
-  font-size: 14px;
+  margin: 12px 0;
+  line-height: 1;
+  background: linear-gradient(45deg, #22222270, #22222280);
+  font-size: 13px;
   border-radius: 18px;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .chip[data-role="error"] {
@@ -313,4 +286,14 @@ div[data-role="load-min"]::before {
   height: 40px;
   border: 6px solid #222;
   border-right: 6px solid white;
+}
+
+.mr-m {
+  line-height: 0.7;
+  margin-top: 2px;
+  font-family: "SFProDisplayBold","SFProIconsRegular","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
 }

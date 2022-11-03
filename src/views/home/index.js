@@ -27,7 +27,9 @@ export default function Home() {
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">blacc&reg;</p>
+              <p className="smoke-text">
+                <div className="chip mr-0">BIO</div>
+              </p>
             </div>
           </div>
         </section>
@@ -35,13 +37,14 @@ export default function Home() {
           <div className="row reverse-responsive">
             <div className="large-2 medium-12 flex justify-content-between">
               <p className="mb-small">Selected Works</p>
-              <p className="mb-small smoke-text hide-on-large">2018 -&nbsp;<span className="white-text">Current</span></p>
+              <p className="mb-small smoke-text hide-on-large"><span className="chip">2018</span> -&nbsp;<span className="white-text">Current</span></p>
             </div>
             <div className="large-8 medium-12">
               <WorksWidget />
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">2018 - <span className="white-text">Current</span></p>
+              <p className="smoke-text"><span className="chip mr-0">2018</span>
+              &nbsp; - &nbsp;<span className="white-text">Current</span></p>
             </div>
           </div>
         </section>
@@ -54,9 +57,8 @@ export default function Home() {
               <ServicesWidget />
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text flex justify-content-between">
-                <IoWalletOutline className="svg" />
-                <span className="white-text">Techstack</span>
+              <p>
+                <span className="chip">techstack</span>
               </p>
             </div>
           </div>
