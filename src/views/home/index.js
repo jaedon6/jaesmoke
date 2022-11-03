@@ -1,5 +1,4 @@
 import { lazy, Fragment } from "react";
-import { IoWalletOutline } from "react-icons/io5";
 import { RiUserSmileFill } from "react-icons/ri";
 
 const WorksWidget = lazy(() => import("../../components/works"));
