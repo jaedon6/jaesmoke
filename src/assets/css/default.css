@@ -1,7 +1,6 @@
 body {
   color: var(--bs-white);
-  background: linear-gradient(#0A0A0A, var(--bs-black), var(--bs-black-alt), #000);
-  background-color: var(--bs-black);
+  background-color: #0A0A0A;
 }
 
 span.profile-box {
@@ -45,18 +44,17 @@ div.header-break {
 }
 
 .card {
-  width: calc(50% - 13px);
-  height: 480px;
+  width: calc(50% - 6px);
+  height: 530px;
   transition: var(--init-transition);
   overflow: hidden;
   background: var(--bs-black);
   position: relative;
+  cursor: default;
   border-radius: 30px;
 }
 
 .card:hover {
-  /* animation: hover 600ms ease-in-out; */
-  box-shadow: 0 0 0 .2rem var(--bs-white);
 }
 
 .card img {
@@ -68,16 +66,16 @@ div.header-break {
 div.card-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 12px;
 }
 
 .caption {
   width: calc(100% - 30px);
-  background: var(--bs-black);
+  background: #0B0B0B;
   border-radius: 30px;
   left: 0;
   right: 0;
-  bottom: 15px;
+  top: 15px;
   padding: 2px 0;
   margin: auto;
   position: absolute;

@@ -1,5 +1,4 @@
 import { lazy, Fragment } from "react";
-import { IoWalletOutline } from "react-icons/io5";
 import { RiUserSmileFill } from "react-icons/ri";
 
 const WorksWidget = lazy(() => import("../../components/works"));
@@ -37,7 +36,9 @@ export default function Home() {
           <div className="row reverse-responsive">
             <div className="large-2 medium-12 flex justify-content-between">
               <p className="mb-small">Selected Works</p>
-              <p className="mb-small smoke-text hide-on-large"><span className="chip">2018</span> -&nbsp;<span className="white-text">Current</span></p>
+              <p className="mb-small smoke-text hide-on-large">
+                2018 - &nbsp;<span className="white-text">Current</span>
+              </p>
             </div>
             <div className="large-8 medium-12">
               <WorksWidget />
