@@ -1,6 +1,7 @@
-import { FiMail, FiPhone, FiLinkedin } from "react-icons/fi";
-import { FaTelegramPlane } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
+import { lazy } from "react";
+import { FiArrowRight } from "react-icons/fi";
+
+const Fade = lazy(() => import("react-reveal/Fade"));
 
 
 export default function Contact(props) {
@@ -8,36 +9,37 @@ export default function Contact(props) {
     <>
       <div className="header-break"></div>
       <div className="container">
-        <div className="jumbo">
+        <section className="jumbo x">
           <div className="row reverse-responsive">
             <div className="large-2 medium-12">
-              <p className="mb-small">Get in Touch</p>
             </div>
             <div className="large-8 medium-12 left-text-small">
-              <div className="heading">
-                Connect with me
+              <div className="heading center-text">
+                <Fade top cascade>
+                  HOT LINES
+                </Fade>
               </div>
               <br />
-              <p className="smoke-text">
-                Have any questions? Get in touch with me using any of the mediums below to get a quote, discuss opportunities or just say Hello 👋
+              <p className="smoke-text center-text">
+                <span className="white-text">Home</span> / Contact
               </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end">
-              <p className="smoke-text">
-                <span className="chip">contact</span>
-              </p>
             </div>
           </div>
-        </div>
+        </section>
         <div>
           <div className="row">
             <div className="large-2 medium-12"></div>
             <div className="large-8 medium-12 left-text-small">
-              <div className="contact-card flex justify-content-between w-100">
-                <a href="mailto:jaysmoke.inbox@gmail.com" target="_blank" rel="noreferrer">
-                  <div className="icon flex align-items-center justify-content-center">
-                    <FiMail />
-                  </div>
+              <div className="contact-card flex justify-content-between align-items-center w-100">
+                <a
+                  href="mailto:jaysmoke.inbox@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-role="action"
+                  className="flex align-items-center justify-content-between">
+                  <FiArrowRight />
                 </a>
                 <div className="label flex justify-content-between align-items-center">
                   <p className="smoke-text">Email Address</p>
@@ -48,11 +50,14 @@ export default function Contact(props) {
                   </div>
                 </div>
               </div>
-              <div className="contact-card flex justify-content-between w-100">
-                <a href="https://t.me/jaesmoke" target="_blank" rel="noreferrer">
-                  <div className="icon flex align-items-center justify-content-center">
-                    <FaTelegramPlane />
-                  </div>
+              <div className="contact-card flex justify-content-between align-items-center w-100">
+                <a
+                  href="https://t.me/jaesmoke"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-role="action"
+                  className="flex align-items-center justify-content-between">
+                  <FiArrowRight />
                 </a>
                 <div className="label flex justify-content-between align-items-center">
                   <p className="smoke-text">Telegram</p>
@@ -63,11 +68,14 @@ export default function Contact(props) {
                   </div>
                 </div>
               </div>
-              <div className="contact-card flex justify-content-between w-100">
-                <a href="tel:+233257396652">
-                  <div className="icon flex align-items-center justify-content-center">
-                    <FiPhone />
-                  </div>
+              <div className="contact-card flex justify-content-between align-items-center w-100">
+                <a
+                  href="tel:+233257396652"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-role="action"
+                  className="flex align-items-center justify-content-between">
+                  <FiArrowRight />
                 </a>
                 <div className="label flex justify-content-between align-items-center">
                   <p className="smoke-text">Phone Number</p>
@@ -76,11 +84,14 @@ export default function Contact(props) {
                   </div>
                 </div>
               </div>
-              <div className="contact-card flex justify-content-between w-100">
-                <a href="https://linkedin.com/in/jaysmoke" target="_blank" rel="noreferrer">
-                  <div className="icon flex align-items-center justify-content-center">
-                    <FiLinkedin />
-                  </div>
+              <div className="contact-card flex justify-content-between align-items-center w-100">
+                <a
+                  href="https://linkedin.com/in/jaysmoke"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-role="action"
+                  className="flex align-items-center justify-content-between">
+                  <FiArrowRight />
                 </a>
                 <div className="label flex justify-content-between align-items-center">
                   <p className="smoke-text">Linkedin</p>
@@ -91,11 +102,14 @@ export default function Contact(props) {
                   </div>
                 </div>
               </div>
-              <div className="contact-card flex justify-content-between w-100">
-                <a href="https://github.com/jaesmoke" target="_blank" rel="noreferrer">
-                  <div className="icon flex align-items-center justify-content-center">
-                    <GoMarkGithub />
-                  </div>
+              <div className="contact-card flex justify-content-between align-items-center w-100">
+                <a
+                  href="https://github.com/jaesmoke"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-role="action"
+                  className="flex align-items-center justify-content-between">
+                  <FiArrowRight />
                 </a>
                 <div className="label flex justify-content-between align-items-center">
                   <p className="smoke-text">Github</p>
@@ -106,6 +120,10 @@ export default function Contact(props) {
                   </div>
                 </div>
               </div>
+              <div className="breaker"></div>
+              <p className="smoke-text center-text">
+                Get in touch with me using any of the mediums above to get a quote, discuss opportunities or just say Hello
+              </p>
             </div>
             <div className="large-2 medium-12 flex justify-content-end"></div>
           </div>
