@@ -1,9 +1,3 @@
-hello 👋 
-I'm Jay Smoke, A Creative Designer and Developer  
-Having over 5+ years of experience in Software and Design
-
-[E-mail](mailto:jaysmoke.inbox@gmail.com) — [LinkedIn](https://www.linkedin.com/in/jaysmoke/) — [Instagram](https://www.instagram.com/mcblacc/) — [Telegram](https://t.me/jaesmoke) — [GitHub](https://github.com/jaesmoke)
-
 [See website for more information](https://jaysmoke.web.app)
 
 ## Skills
