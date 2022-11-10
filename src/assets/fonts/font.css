@@ -1,49 +1,9 @@
 @font-face {
-  font-family: "SFProDisplayBold";
-  src: url(./src/sf-pro-display_bold.woff2);
+  font-family: "JSRegular";
+  src: url(./src/001.woff);
 }
 
 @font-face {
-  font-family: "SFProDisplayRegular";
-  src: url(./src/sf-pro-display_regular.woff2);
-}
-
-@font-face {
-  font-family: "SFProDisplaySemibold";
-  src: url(./src/sf-pro-display_semibold.woff2);
-}
-
-@font-face {
-  font-family: "SFProIconsBold";
-  src: url(./src/sf-pro-icons_bold.woff2);
-}
-
-@font-face {
-  font-family: "SFProIconsRegular";
-  src: url(./src/sf-pro-icons_regular.woff2);
-}
-
-@font-face {
-  font-family: "SFProIconsSemibold";
-  src: url(./src/sf-pro-icons_semibold.woff2);
-}
-
-@font-face {
-  font-family: "SFProTextBold";
-  src: url(./src/sf-pro-text_bold.woff2);
-}
-
-@font-face {
-  font-family: "SFProTextMedium";
-  src: url(./src/sf-pro-text_medium.woff2);
-}
-
-@font-face {
-  font-family: "SFProTextRegular";
-  src: url(./src/sf-pro-text_regular.woff2);
-}
-
-@font-face {
-  font-family: "SFPro Text Semibold";
-  src: url(./src/sf-pro-text_semibold.woff2);
+  font-family: "JSBold";
+  src: url(./src/002.woff2);
 }
