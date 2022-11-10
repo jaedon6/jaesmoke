@@ -1,12 +1,13 @@
 *:root {
   --bs-black: #0E0E0E;
-  --bs-black-alt: #0A0A0A;
+  --bs-black-alt: #070707;
   --bs-white: #ffffff;
   --bs-smoke: #666666;
+  --bs-border: #22222270;
   --container-size: 94.666%;
-  --init-height: 150px;
+  --init-height: 84px;
   --init-transition: 200ms ease;
-  --init-shadow: 0 10px 15px 0 rgba(0,0,0,.5), 0 0 5px 0 rgba(20,20,20,1), inset 0 5px 20px 0 rgba(0,0,0,.1);
+  --init-shadow: 0 10px 15px 0 rgba(0,0,0,.8), 0 0 20px 0 rgba(20,20,20,1), inset 0 5px 20px 0 rgba(0,0,0,.0);
 }
 
 @import "./css/animation.css";
